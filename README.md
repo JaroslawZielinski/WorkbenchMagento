@@ -62,7 +62,8 @@ I suppose it will work on Windows, but I have not tested it. And I suspect that 
 
 1. Make sure you have docker and docker-compose on your system
 2. Clone the repository
-3. Start the projects using `./magento start` or `docker-compose up`
+3. Run this command to build php7.2 image `docker build -t dockerized-image-php docker-images/php/`
+4. Start the projects using `./magento start` or `docker-compose up`
 
 ```bash
 git clone https://github.com/andreaskoch/dockerized-magento.git && cd dockerized-magento
