@@ -49,7 +49,7 @@ nginx:
   volumes_from:
     - php
 php:
-  image: andreaskoch/dockerized-magento-php
+  image: dockerized-image-php
   links:
     - "cache:rediscache"
     - "sessions:redissession"
