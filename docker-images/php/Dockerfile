@@ -84,7 +84,7 @@ COPY ext-xdebug.ini /usr/local/etc/php/conf.d/ext-xdebug.ini
 # Make sure the volume mount point is empty
 RUN rm -rf /var/www/html/*
 
-Run apk add --no-cache sudo
+RUN apk add --no-cache sudo
 
 # install mysql client
 RUN apk add --update mysql mysql-client && rm -f /var/cache/apk/*
