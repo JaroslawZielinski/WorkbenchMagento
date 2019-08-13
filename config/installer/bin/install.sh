@@ -147,5 +147,7 @@ fixFilesystemPermissions
 echo "Installation fininished"
 printLogonInformation
 
+magerun sys:setup:run
+
 runForever
 exit 0
