@@ -63,14 +63,14 @@ I suppose it will work on Windows, but I have not tested it. And I suspect that 
 1. Make sure you have docker and docker-compose on your system
 2. Clone the repository
 3. Run this command to build php7.2 image `docker build -t dockerized-image-php docker-images/php/`
-4. Run this command `./magento magerun sys:setup:run`
-5. Start the projects using `./magento start` or `docker-compose up`
+4. Start the projects using `./magento start` or `docker-compose up`
+5. Run this command `./magento magerun sys:setup:run`
 
 ```bash
 git clone https://github.com/JaroslawZielinski/dockerized-magento.git && cd dockerized-magento
 docker build -t dockerized-image-php docker-images/php/
-./magento magerun sys:setup:run
 ./magento start
+./magento magerun sys:setup:run
 ```
 
 During the first start of the project **docker-compose** will
