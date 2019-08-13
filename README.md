@@ -69,6 +69,7 @@ I suppose it will work on Windows, but I have not tested it. And I suspect that 
 ```bash
 git clone https://github.com/JaroslawZielinski/dockerized-magento.git && cd dockerized-magento
 docker build -t dockerized-image-php docker-images/php/
+./magento magerun sys:setup:run
 ./magento start
 ```
 
