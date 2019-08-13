@@ -144,10 +144,10 @@ magerun --skip-root-check --root-dir="$MAGENTO_ROOT" cache:enable fpc
 echo "Fixing filesystem permissions"
 fixFilesystemPermissions
 
+magerun sys:setup:run
+
 echo "Installation fininished"
 printLogonInformation
-
-magerun sys:setup:run
 
 runForever
 exit 0
