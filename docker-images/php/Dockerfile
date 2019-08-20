@@ -76,6 +76,12 @@ RUN docker-php-ext-install mysqli && \
 	docker-php-ext-install mbstring && \
 	docker-php-ext-install opcache
 
+# XDebug
+RUN apk add --no-cache --virtual .build-deps $PHPIZE_DEPS \
+    && pecl install xdebug-2.7.0 \
+    && docker-php-ext-enable xdebug \
+    && apk del -f .build-deps
+
 # Configure
 COPY php.ini /usr/local/etc/php/php.ini
 COPY php-fpm.conf /usr/local/etc/
