@@ -76,6 +76,9 @@ RUN docker-php-ext-install mysqli && \
 	docker-php-ext-install mbstring && \
 	docker-php-ext-install opcache
 
+# install zip
+RUN apk add --no-cache libzip-dev && docker-php-ext-configure zip --with-libzip=/usr/include && docker-php-ext-install zip
+
 # XDebug
 RUN apk add --no-cache --virtual .build-deps $PHPIZE_DEPS \
     && pecl install xdebug-2.7.0 \
