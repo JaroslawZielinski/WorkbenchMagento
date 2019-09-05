@@ -95,5 +95,8 @@ RUN rm -rf /var/www/html/*
 
 RUN apk add --no-cache sudo
 
+# Add bash (compliance with ./magento enter php
+RUN apk add --no-cache bash
+
 # install mysql client
 RUN apk add --update mysql mysql-client && rm -f /var/cache/apk/*
