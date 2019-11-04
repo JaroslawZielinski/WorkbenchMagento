@@ -124,6 +124,45 @@ You can control the project using the built-in `magento`-script which is basical
 
 **Note**: The `magento`-script is just a small wrapper around `docker-compose`. You can just use [docker-compose](https://docs.docker.com/compose/) directly.
 
+## If you want to configure your Workbench Magento do following steps:
+- Create your own admin user
+```bash
+./magento magerun admin:user:create
+``` 
+- Remove Demo notice
+```bash
+./magento magerun design:demo-notice --global
+```
+- Remove notices in admin panel
+    - System->Notifications (with mass action select all, Mark as read action and submit)
+    - Enable Formkey validation on checkout (System->Configuration->ADVANCED->Admin [Security]: Enable Form Key Validation On Checkout - Yes)
+    - ReindexAll (System->Index Management Select All Reindex Data action and submit)
+- Setup Website Workbench as default (System->Manage Stores, Find Workbench click on it and set as default, Save Website)
+- Configure and Save
+    - System->Configuration->ADVANCED->System [Cron]: Enable "run now": Yes
+    - System->Configuration->ADVANCED->Developer [Log Settings]: Enabled: Yes
+    - System->Configuration->Web->[Default Pages]: CMS HOME Page : Workbench
+    - System->Configuration->Design [Package]:	Current Package Name: workbench
+    - System->Configuration->Design [Footer]: Copyright:
+```html
+<div class="pt-2 lgrey">
+<div class="text-center py-2">Github page:
+                        <a href="https://github.com/JaroslawZielinski" target="_blank"> JaroslawZielinski</a>
+                    </div>
+                    <div class="text-center py-2">LinkedIn page:
+                        <a href="https://linkedin.com/in/jzielinski82" target="_blank"> JaroslawZielinski</a>
+                    </div>
+</div>
+```
+
+- Switch off cache (developer mode) and clear
+    - System->Cache Management 
+        - Select all Disable action and Submit
+        - Select all Refresh action and Submit
+        - Flush Magento Cache - click button
+        - Flush JavaScript/Css Cache - click button
+- Refresh Front Page of the project
+ 
 ## Components
 
 ### Overview

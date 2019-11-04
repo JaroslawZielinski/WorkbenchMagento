@@ -14,7 +14,8 @@
         "colinmollenhour/modman": "*",
         "theseer/autoload": "*",
         "magento/core": "^1.9",
-        "jaroslawzielinski/jaro_salesfix": "dev-master"
+        "jaroslawzielinski/jaro_salesfix": "dev-master",
+        "jaroslawzielinski/workbench_plaintable": "dev-master"
     },
     "require-dev": {
         "aoepeople/aoe_profiler": "v0.3.0",
@@ -25,9 +26,13 @@
             "type": "composer",
             "url": "https://packages.firegento.com"
         },
-        "repo-name": {
+        "1": {
             "type": "vcs",
             "url": "https://github.com/JaroslawZielinski/Magento-Jaro_SalesFix-Extension.git"
+        },
+        "2": {
+            "type": "vcs",
+            "url": "https://github.com/JaroslawZielinski/Magento-Jaro_Workbench-Extension.git"
         }
     },
     "extra": {
