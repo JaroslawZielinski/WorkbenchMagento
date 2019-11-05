@@ -11,7 +11,7 @@ set -e
 #####################################
 function updateMagento() {
 	cd /var/www/html
-	composer update
+	composer clear-cache && COMPOSER_PROCESS_TIMEOUT=2000 composer update
 }
 
 #####################################
