@@ -22,15 +22,15 @@
         "aoepeople/aoe_templatehints": "^0.4"
     },
     "repositories": {
-        "0": {
+        "firegento": {
             "type": "composer",
             "url": "https://packages.firegento.com"
         },
-        "1": {
+        "salesfix": {
             "type": "vcs",
             "url": "https://github.com/JaroslawZielinski/Magento-Jaro_SalesFix-Extension.git"
         },
-        "2": {
+        "workbench": {
             "type": "vcs",
             "url": "https://github.com/JaroslawZielinski/Magento-Jaro_Workbench-Extension.git"
         }

@@ -138,6 +138,13 @@ You can control the project using the built-in `magento`-script which is basical
     - Enable Formkey validation on checkout (System->Configuration->ADVANCED->Admin [Security]: Enable Form Key Validation On Checkout - Yes)
     - ReindexAll (System->Index Management Select All Reindex Data action and submit)
 - Setup Website Workbench as default (System->Manage Stores, Find Workbench click on it and set as default, Save Website)
+    - Alternative way:
+        ```bash
+      ./magento enter php
+      ``` 
+      ```bash
+      php web/shell/workbench/setup-website-workbench-as-default/shell.php --start
+      ``` 
 - Configure and Save
     - System->Configuration->ADVANCED->System [Cron]: Enable "run now": Yes
     - System->Configuration->ADVANCED->Developer [Log Settings]: Enabled: Yes
