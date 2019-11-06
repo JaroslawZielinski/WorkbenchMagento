@@ -124,7 +124,7 @@ You can control the project using the built-in `magento`-script which is basical
 
 **Note**: The `magento`-script is just a small wrapper around `docker-compose`. You can just use [docker-compose](https://docs.docker.com/compose/) directly.
 
-## If you want to configure your Workbench Magento do following steps:
+## If you want to configure your Magento using "Workbench_PlainTable" module do following steps:
 - Create your own admin user
 ```bash
 ./magento magerun admin:user:create
