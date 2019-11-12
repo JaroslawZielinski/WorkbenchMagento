@@ -148,6 +148,7 @@ You can control the project using the built-in `magento`-script which is basical
 - Configure and Save
     - System->Configuration->ADVANCED->System [Cron]: Enable "run now": Yes
     - System->Configuration->ADVANCED->Developer [Log Settings]: Enabled: Yes
+    - System->Configuration->ADVANCED->Admin [Startup Page]: Configuration
     - System->Configuration->Web->[Default Pages]: CMS HOME Page : Workbench
     - System->Configuration->Design [Package]:	Current Package Name: workbench
     - System->Configuration->Design [Footer]: Copyright:
