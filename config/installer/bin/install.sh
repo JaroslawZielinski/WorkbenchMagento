@@ -144,6 +144,7 @@ magerun --skip-root-check --root-dir="$MAGENTO_ROOT" cache:enable fpc
 echo "Fixing filesystem permissions"
 fixFilesystemPermissions
 
+echo "Running DB Upgrade scripts"
 magerun --skip-root-check --root-dir="$MAGENTO_ROOT" sys:setup:run
 
 echo "Installation fininished"
