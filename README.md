@@ -151,6 +151,7 @@ You can control the project using the built-in `magento`-script which is basical
     - System->Configuration->ADVANCED->Developer [Log Settings]: Enabled: Yes
     - System->Configuration->Web->[Default Pages]: CMS HOME Page : Workbench
     - System->Configuration->Design [Package]:	Current Package Name: workbench
+    - System->Configuration->Design [HTML Head]: Default Title: Magento Workbench
     - System->Configuration->Design [Footer]: Copyright:
 ```html
 <div class="pt-2 lgrey">
