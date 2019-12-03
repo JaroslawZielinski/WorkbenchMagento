@@ -149,7 +149,7 @@ You can control the project using the built-in `magento`-script which is basical
     - System->Configuration->ADVANCED->Admin [Startup Page]: Configuration
     - System->Configuration->ADVANCED->System [Cron]: Enable "run now": Yes
     - System->Configuration->ADVANCED->Developer [Log Settings]: Enabled: Yes
-    - System->Configuration->GENERAL->General [Locale Options]: Timezone: GMT Standard Time (Europe/London)
+    - System->Configuration->GENERAL->General [Locale Options]: Timezone: Central European Standard Time (Europe/Warsaw)
     - System->Configuration->GENERAL->General [Locale Options]: Locale: English (United Kingdom)
     - System->Configuration->GENERAL->Web->[Default Pages]: CMS HOME Page : Workbench
     - System->Configuration->GENERAL->Design [Package]:	Current Package Name: workbench
