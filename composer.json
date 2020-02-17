@@ -15,7 +15,8 @@
         "theseer/autoload": "*",
         "magento/core": "^1.9",
         "jaroslawzielinski/jaro_salesfix": "dev-master",
-        "jaroslawzielinski/workbench_plaintable": "dev-master"
+        "jaroslawzielinski/workbench_plaintable": "dev-master",
+        "jaroslawzielinski/jaro_biblegroup": "dev-master"
     },
     "require-dev": {
         "aoepeople/aoe_profiler": "v0.3.0",
@@ -33,6 +34,10 @@
         "workbench": {
             "type": "vcs",
             "url": "https://github.com/JaroslawZielinski/Magento-Jaro_Workbench-Extension.git"
+        },
+        "biblegroup": {
+            "type": "vcs",
+            "url": "https://github.com/JaroslawZielinski/Magento-Jaro_BibleGroup-Extension.git"
         }
     },
     "extra": {
