@@ -37,7 +37,8 @@
     },
     "extra": {
         "magento-root-dir": "web",
-        "auto-append-gitignore": true
+        "auto-append-gitignore": true,
+        "magento-force": "override"
     },
     "config": {
         "discard-changes": true
